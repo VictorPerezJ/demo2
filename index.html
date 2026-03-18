@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOK | Boutique Visual & Eyewear de Lujo</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- SEO & Redes Sociales Actualizados para demo2 -->
+    <meta name="description" content="Exclusividad y precisión visual. Especialistas en lentes de sol de alta gama y salud ocular. Descubre tu próximo estilo en LOOK.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://victorperezj.github.io/demo2/">
+    <meta property="og:title" content="LOOK | Alta Optometría y Lentes de Sol">
+    <meta property="og:description" content="El equilibrio perfecto entre salud visual y moda premium. Agenda hoy en Emiliano Zapata.">
+    <meta property="og:image" content="https://victorperezj.github.io/demo2/og-image.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .gold-gradient {
+            background: linear-gradient(45deg, #d4af37, #f1e5ac, #cfb53b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .bg-premium-dark { background-color: #0a0a0a; }
+        .border-red-luxe { border-color: #991b1b; }
+        .text-red-luxe { color: #dc2626; }
+        .hover-gold:hover { color: #fbbf24; }
+    </style>
+</head>
+<body class="bg-premium-dark text-slate-200">
+
+    <!-- Navegación Elegante -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 group cursor-pointer">
+                <div class="w-12 h-12 bg-red-700 rounded-sm flex items-center justify-center text-white rotate-45 group-hover:rotate-0 transition-transform duration-500">
+                    <i data-lucide="eye" class="-rotate-45 group-hover:rotate-0 transition-transform"></i>
+                </div>
+                <span class="text-2xl font-black tracking-[0.2em] text-white uppercase">Look</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-400">
+                <a href="#coleccion" class="hover:text-red-500 transition">Colección</a>
+                <a href="#servicios" class="hover:text-red-500 transition">Servicios</a>
+                <!-- <a href="#" class="hover:text-red-500 transition">Ubicación</a> -->
+            </div>
+            <button onclick="toggleModal()" class="bg-white text-black hover:bg-red-600 hover:text-white px-6 py-2.5 rounded-none text-xs font-black uppercase tracking-widest transition-all duration-300 border border-white">
+                Agendar Cita
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Impacto Visual -->
+    <header class="relative min-h-[85vh] flex items-center overflow-hidden border-b border-white/5">
+        <!-- Overlay decorativo -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 relative z-20">
+            <div class="text-center lg:text-left space-y-8">
+                <div class="inline-block px-3 py-1 border border-yellow-500/30 bg-yellow-500/5 rounded-full">
+                    <span class="text-[10px] font-bold tracking-[0.3em] text-yellow-500 uppercase italic">Edición 2026 - Premium Eyewear</span>
+                </div>
+                <h1 class="text-5xl lg:text-8xl font-black leading-none text-white uppercase tracking-tighter">
+                    Viste tu <span class="text-red-600">mirada</span>.
+                </h1>
+                <p class="text-lg text-slate-400 max-w-lg font-light leading-relaxed">
+                    Especialistas en optometría clínica y curadores de las marcas más exclusivas del mundo. Redefine tu estilo en Emiliano Zapata.
+                </p>
+                <div class="flex flex-wrap gap-5 justify-center lg:justify-start pt-4">
+                    <button onclick="toggleModal()" class="bg-red-700 hover:bg-red-800 text-white px-10 py-5 font-black uppercase tracking-[0.2em] text-sm transition-all shadow-2xl shadow-red-900/20">
+                        Descubrir Colección
+                    </button>
+                    <a href="https://wa.me/527111164541?text=Me%20interesa%20mas%20informaci%C3%B3n%20acerca%20de%20su%20servicio" 
+                       class="px-10 py-5 border border-white/20 hover:border-red-600 hover:text-red-600 font-bold uppercase tracking-widest text-sm transition-all">
+                       Asesoría Personalizada
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Imagen de Fondo Hero -->
+        <div class="absolute right-0 top-0 w-full lg:w-2/3 h-full grayscale-[0.5] hover:grayscale-0 transition-all duration-1000">
+            <img src="lente_hero.jpg" 
+                 alt="Model with high-end sunglasses" 
+                 class="w-full h-full object-cover object-center">
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE SERVICIOS BOUTIQUE -->
+    <section id="servicios" class="py-32 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+            <div class="max-w-xl">
+                <h2 class="text-xs font-bold tracking-[0.5em] text-red-600 uppercase mb-4 italic">Nuestros Servicios</h2>
+                <h3 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter">Precisión que complementa tu <span class="gold-gradient">estatus</span>.</h3>
+            </div>
+            <p class="text-slate-500 text-sm max-w-xs border-l-2 border-red-800 pl-6 italic">
+                Equilibramos la salud clínica con la estética más refinada del mercado óptico.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Servicio 1: Examen -->
+            <div class="group relative bg-white/5 border border-white/10 p-8 hover:bg-red-900/10 hover:border-red-600/50 transition-all duration-500">
+                <div class="text-yellow-500 mb-6 group-hover:scale-110 transition-transform"><i data-lucide="scan-eye" class="w-10 h-10"></i></div>
+                <h4 class="text-xl font-bold text-white uppercase mb-4 tracking-wider">Examen Clínico Digital</h4>
+                <p class="text-slate-400 text-sm font-light">Evaluación de alta precisión para una visión perfecta bajo cualquier condición.</p>
+                <div class="mt-8 w-10 h-0.5 bg-red-600 transition-all group-hover:w-full"></div>
+            </div>
+
+            <!-- Servicio 2: Lentes Graduados -->
+            <div class="group relative bg-white/5 border border-white/10 p-8 hover:bg-red-900/10 hover:border-red-600/50 transition-all duration-500">
+                <div class="text-yellow-500 mb-6 group-hover:scale-110 transition-transform"><i data-lucide="glasses" class="w-10 h-10"></i></div>
+                <h4 class="text-xl font-bold text-white uppercase mb-4 tracking-wider">Micas de Alta Gama</h4>
+                <p class="text-slate-400 text-sm font-light">Filtros inteligentes y antirreflejantes de última generación para nitidez absoluta.</p>
+                <div class="mt-8 w-10 h-0.5 bg-red-600 transition-all group-hover:w-full"></div>
+            </div>
+
+            <!-- Servicio 3: Lentes Sol -->
+            <div class="group relative bg-white/5 border border-white/10 p-8 hover:bg-red-900/10 hover:border-red-600/50 transition-all duration-500">
+                <div class="text-yellow-500 mb-6 group-hover:scale-110 transition-transform"><i data-lucide="sun" class="w-10 h-10"></i></div>
+                <h4 class="text-xl font-bold text-white uppercase mb-4 tracking-wider">Curaduría de Sol</h4>
+                <p class="text-slate-400 text-sm font-light">Piezas icónicas de diseñador que protegen tu mirada con distinción.</p>
+                <div class="mt-8 w-10 h-0.5 bg-red-600 transition-all group-hover:w-full"></div>
+            </div>
+
+            <!-- Servicio 4: Contacto -->
+            <div class="group relative bg-white/5 border border-white/10 p-8 hover:bg-red-900/10 hover:border-red-600/50 transition-all duration-500">
+                <div class="text-yellow-500 mb-6 group-hover:scale-110 transition-transform"><i data-lucide="circle-dot" class="w-10 h-10"></i></div>
+                <h4 class="text-xl font-bold text-white uppercase mb-4 tracking-wider">Adaptación Pro</h4>
+                <p class="text-slate-400 text-sm font-light">Libertad total con lentes de contacto de alta hidratación y confort diario.</p>
+                <div class="mt-8 w-10 h-0.5 bg-red-600 transition-all group-hover:w-full"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERÍA DE LUJO ACTUALIZADA -->
+    <section id="coleccion" class="py-32 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 space-y-4">
+                <h2 class="text-xs font-bold tracking-[0.6em] text-red-600 uppercase italic">Exclusividad</h2>
+                <h3 class="text-5xl font-black text-white uppercase tracking-tighter">The <span class="gold-gradient">Gold</span> Selection</h3>
+                <div class="w-24 h-1 bg-red-700 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                
+                <!-- Modelo Premium 1 -->
+                <div class="group relative bg-black border border-white/5 overflow-hidden transition-all duration-700 hover:border-yellow-500/40 cursor-pointer">
+                    <div class="aspect-[3/4] overflow-hidden">
+                        <!-- Clases corregidas: grayscale por defecto, grayscale-0 en group-hover -->
+                        <img src="lente1.jpg" 
+                             class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110" 
+                             alt="Aviator Noir">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6 text-center">
+                        <p class="text-[10px] tracking-[0.3em] text-red-500 uppercase font-black mb-2 italic">Aviator Noir</p>
+                        <p class="text-xs font-light text-slate-300 uppercase">Gama Alta</p>
+                    </div>
+                </div>
+
+                <!-- Modelo Premium 2 -->
+                <div class="group relative bg-black border border-white/5 overflow-hidden transition-all duration-700 hover:border-yellow-500/40 cursor-pointer">
+                    <div class="aspect-[3/4] overflow-hidden">
+                        <img src="lente2.jpg" 
+                             class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110" 
+                             alt="Minimal Glass">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6 text-center">
+                        <p class="text-[10px] tracking-[0.3em] text-red-500 uppercase font-black mb-2 italic">Minimal Glass</p>
+                        <p class="text-xs font-light text-slate-300 uppercase">Exclusivo</p>
+                    </div>
+                </div>
+
+                <!-- Modelo Premium 3 -->
+                <div class="group relative bg-black border border-white/5 overflow-hidden transition-all duration-700 hover:border-yellow-500/40 cursor-pointer">
+                    <div class="aspect-[3/4] overflow-hidden">
+                        <img src="lente3.jpg" 
+                             class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110" 
+                             alt="Vintage Gold">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6 text-center">
+                        <p class="text-[10px] tracking-[0.3em] text-red-500 uppercase font-black mb-2 italic">Vintage Gold</p>
+                        <p class="text-xs font-light text-slate-300 uppercase">Lujo Clásico</p>
+                    </div>
+                </div>
+
+                <!-- Modelo Premium 4 -->
+                <div class="group relative bg-black border border-white/5 overflow-hidden transition-all duration-700 hover:border-yellow-500/40 cursor-pointer">
+                    <div class="aspect-[3/4] overflow-hidden">
+                        <img src="lente1.jpg" 
+                             class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110" 
+                             alt="Rose Metal">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6 text-center">
+                        <p class="text-[10px] tracking-[0.3em] text-red-500 uppercase font-black mb-2 italic">Rose Metal</p>
+                        <p class="text-xs font-light text-slate-300 uppercase">Elegancia</p>
+                    </div>
+                </div>
+
+                <!-- Modelo Premium 5 -->
+                <div class="group relative bg-black border border-white/5 overflow-hidden transition-all duration-700 hover:border-yellow-500/40 cursor-pointer">
+                    <div class="aspect-[3/4] overflow-hidden">
+                        <img src="lente2.jpg" 
+                             class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-110" 
+                             alt="Classic Black">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6 text-center">
+                        <p class="text-[10px] tracking-[0.3em] text-red-500 uppercase font-black mb-2 italic">Classic Black</p>
+                        <p class="text-xs font-light text-slate-300 uppercase">Atemporal</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Flotante Premium -->
+    <a href="https://wa.me/527111164541?text=Me%20interesa%20mas%20informaci%C3%B3n%20acerca%20de%20su%20servicio" 
+       target="_blank"
+       class="fixed bottom-10 right-10 bg-red-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 hover:bg-green-600 transition-all z-50 group">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+        <span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-black text-white text-[10px] font-bold tracking-widest uppercase py-1 px-3 border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Atención Exclusiva</span>
+    </a>
+
+    <!-- Modal Formulario de Lujo -->
+    <div id="contactModal" class="fixed inset-0 z-[60] hidden">
+        <div class="absolute inset-0 bg-black/95 backdrop-blur-sm" onclick="toggleModal()"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-lg bg-premium-dark border border-white/10 p-12 shadow-2xl">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-black text-white uppercase tracking-tighter mb-2">Reserva tu Experiencia</h3>
+                <p class="text-xs tracking-widest text-slate-500 uppercase italic">Atención personalizada de nivel superior</p>
+            </div>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                <input type="hidden" name="access_key" value="6abc2c69-b5fa-4921-9430-e951c58ec7b4">
+                
+                <div class="space-y-1">
+                    <label class="text-[10px] font-bold uppercase tracking-widest text-red-600">Nombre del Invitado</label>
+                    <input type="text" name="name" required class="w-full bg-white/5 border-b border-white/20 p-4 outline-none focus:border-red-600 transition text-white">
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[10px] font-bold uppercase tracking-widest text-red-600">Contacto Privado (Tel/WA)</label>
+                    <input type="tel" name="phone" required class="w-full bg-white/5 border-b border-white/20 p-4 outline-none focus:border-red-600 transition text-white">
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[10px] font-bold uppercase tracking-widest text-red-600">Preferencia</label>
+                    <select name="service" class="w-full bg-white/5 border-b border-white/20 p-4 outline-none focus:border-red-600 transition text-slate-400">
+                        <option class="bg-black">Asesoría de Estilo</option>
+                        <option class="bg-black">Examen Clínico VIP</option>
+                        <option class="bg-black">Cotización de Lujo</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="w-full bg-red-700 text-white font-black py-5 uppercase tracking-[0.3em] text-xs hover:bg-white hover:text-black transition-all">
+                    Confirmar Solicitud
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Boutique -->
+    <footer class="bg-black text-slate-500 py-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-3 mb-12">
+                <div class="w-8 h-8 bg-red-800 flex items-center justify-center rotate-45 text-white">
+                    <i data-lucide="eye" class="-rotate-45 w-4 h-4"></i>
+                </div>
+                <span class="text-xl font-black tracking-[0.3em] text-white uppercase">Look</span>
+            </div>
+            
+            <p class="text-xs uppercase tracking-widest mb-10 max-w-md mx-auto leading-relaxed">
+                Comprometidos con la excelencia visual y el estilo sin fronteras.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-10 text-[10px] font-bold uppercase tracking-widest mb-12">
+                <a href="#aviso" onclick="toggleLegal()" class="hover:text-red-500 transition">Privacidad</a>
+                <a href="#" class="hover:text-red-500 transition">Términos</a>
+                <a href="#" class="hover:text-red-500 transition">Garantía de Lujo</a>
+            </div>
+
+            <div id="legalSection" class="hidden text-left max-w-2xl mx-auto bg-white/5 p-8 border border-white/5 text-[10px] leading-loose">
+                <p class="text-red-600 font-black mb-4 tracking-widest uppercase italic">Aviso de Privacidad / Exclusividad</p>
+                <p>En LOOK, protegemos su información con la misma precisión que su visión. Sus datos serán utilizados exclusivamente para la gestión de su cita y asesoría de imagen personalizada.</p>
+            </div>
+            
+            <div class="mt-20 pt-10 border-t border-white/5">
+                <p class="text-[9px] tracking-widest uppercase opacity-30">© 2026 LOOK Boutique Visual. Emiliano Zapata, Morelos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function toggleModal() {
+            const m = document.getElementById('contactModal');
+            m.classList.toggle('hidden');
+            document.body.style.overflow = m.classList.contains('hidden') ? 'auto' : 'hidden';
+        }
+        function toggleLegal() {
+            document.getElementById('legalSection').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
