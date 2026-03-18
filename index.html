@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salud Visual Pro | Examen de la Vista y Lentes de
+            Contacto</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- CONFIGURACIÓN PARA WHATSAPP (Open Graph) -->
+        <meta property="og:type" content="website">
+        <!-- URL de tu sitio en GitHub Pages -->
+         <meta name="description" content="Especialistas en optometría clínica. Examen de la vista profesional, adaptación de lentes y diagnóstico de salud visual. ¡Agenda tu cita hoy!">
+        <meta property="og:url"
+            content="https://victorperezj.github.io/optometr-a_demo/">
+        <meta property="og:title" content="LOOK | Salud Visual Especializada">
+        <meta property="og:description"
+            content="Vuelve a ver la vida con claridad. Agende su examen de la vista hoy mismo en Emiliano Zapata. Optometrista en Emiliano Zapata">
+        <!-- Imagen que se mostrará en WhatsApp (Usa una de las generadas o sube la tuya) -->
+        <meta property="og:image"
+            content="https://victorperezj.github.io/optometr-a_demo/og-image.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+    <body class="bg-slate-50 text-slate-800 font-sans">
+
+        <!-- Navegación -->
+        <nav
+            class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200">
+            <div
+                class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <!-- Logo SVG representativo de salud visual -->
+                    <div
+                        class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"><path
+                                d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle
+                                cx="12" cy="12" r="3" /></svg>
+                    </div>
+                    <span
+                        class="text-2xl font-black tracking-tighter text-slate-900 uppercase">Look</span>
+                </div>
+                <button onclick="toggleModal()"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition">
+                    Agendar Cita
+                </button>
+            </div>
+        </nav>
+
+        <header
+            class="relative bg-blue-900 text-white py-20 lg:py-32 overflow-hidden">
+            <div
+                class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10 text-center lg:text-left">
+                    <h1
+                        class="text-4xl lg:text-6xl font-extrabold leading-tight">
+                        Vuelve a ver tu vida con <span
+                            class="text-blue-400">claridad.</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-blue-100">
+                        Exámenes de la vista completos y tecnología de
+                        vanguardia para tu salud ocular en Emiliano Zapata.
+                    </p>
+                    <div
+                        class="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <button onclick="toggleModal()"
+                            class="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition">
+                            Agendar Cita Ahora
+                        </button>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block">
+                    <!-- Imagen de Optometrista Trabajando (Libre Licencia) -->
+                    <img src="optometrista.jpg"
+                        alt="Optometrista trabajando con paciente"
+                        class="rounded-2xl shadow-2xl border-4 border-white/10 object-cover w-full h-[500px]">
+                </div>
+            </div>
+        </header>
+
+        <!-- SECCIÓN DE SERVICIOS ACTUALIZADA (4 COLUMNAS) -->
+        <section class="py-20 max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Nuestros Servicios</h2>
+                <p class="text-slate-500 mt-2">Cuidado integral para tu salud
+                    visual</p>
+                <div class="h-1 w-20 bg-blue-500 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Grid Ajustado: 1 col móvil, 2 tablet, 4 escritorio -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Servicio 1: Examen Clínico -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition overflow-hidden group">
+                    <div class="overflow-hidden h-48">
+                        <img src="examen_ocular.jpg"
+                            alt="Examen de la vista profesional"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 text-center lg:text-left">
+
+                        <h3 class="text-xl font-bold mb-2">Examen Clínico</h3>
+                        <p class="text-slate-600 text-sm italic">Evaluación
+                            profunda de tu agudeza visual y salud retiniana con
+                            equipo digital.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Lentes Graduados (Actualizado con imagen personalizada) -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition overflow-hidden group">
+                    <div class="overflow-hidden h-48">
+                        <img
+                            src="lentes_graduado.jpg"
+                            alt="Lentes Graduados Transparentes"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 text-center lg:text-left">
+
+                        <h3 class="text-xl font-bold mb-2">Lentes Graduados</h3>
+                        <p class="text-slate-600 text-sm italic">Amplia variedad
+                            de armazones y micas con protección UV y
+                            antirreflejante.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Lentes de Contacto (Actualizado con imagen personalizada) -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition overflow-hidden group">
+                    <div class="overflow-hidden h-48">
+                        <img src="lentes_de_contacto.jpg"
+                            alt="Lente de contacto en la yema del dedo"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 text-center lg:text-left">
+                        <h3 class="text-xl font-bold mb-2">Lentes de
+                            Contacto</h3>
+                        <p class="text-slate-600 text-sm italic">Adaptación
+                            profesional de lentes blandos, cosméticos y tóricos
+                            para tu comodidad.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Salud Ocular -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition overflow-hidden group">
+                    <div class="overflow-hidden h-48">
+                        <img src="salud_ocular.jpg"
+                            alt="Lente de contacto en la yema del dedo"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 text-center lg:text-left">
+                        <h3 class="text-xl font-bold mb-2">Salud Ocular</h3>
+                        <p class="text-slate-600 text-sm italic">Detección
+                            temprana de anomalías para proteger tu visión a
+                            largo plazo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <a href="https://wa.me/527111164541?text=Me%20interesa%20mas%20informaci%C3%B3n%20acerca%20de%20su%20servicio"
+          target="_blank"
+            class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition z-50 flex items-center justify-center">
+            <i data-lucide="message-circle" class="w-8 h-8"></i>
+        </a>        
+
+        <div id="contactModal" class="fixed inset-0 z-[60] hidden">
+            <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
+                onclick="toggleModal()"></div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-white rounded-3xl p-8 shadow-2xl">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-slate-800">Contacto</h3>
+                    <button onclick="toggleModal()"
+                        class="text-slate-400 hover:text-slate-600"><i
+                            data-lucide="x"></i></button>
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST"
+                    id="optometristaForm" class="space-y-4">
+
+                    <input type="hidden" name="access_key"
+                        value="6abc2c69-b5fa-4921-9430-e951c58ec7b4">
+
+                    <input type="checkbox" name="botcheck" class="hidden"
+                        style="display:none">
+
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-slate-700 font-bold">Nombre
+                            Completo</label>
+                        <input type="text" name="name"
+                            placeholder="Ej. Juan Pérez" required
+                            class="w-full mt-1 p-3 bg-slate-100 border-transparent rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-slate-700 font-bold">WhatsApp
+                            / Teléfono</label>
+                        <input type="tel" name="phone"
+                            placeholder="777 000 0000" required
+                            class="w-full mt-1 p-3 bg-slate-100 border-transparent rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-slate-700 font-bold">Servicio
+                            Interesado</label>
+                        <select name="service"
+                            class="w-full mt-1 p-3 bg-slate-100 border-transparent rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition cursor-pointer">
+                            <option>Agendar Examen de la Vista</option>
+                            <option>Cotizar Armazones/Lentes</option>
+                            <option>Lentes de Contacto</option>
+                            <option>Consulta Especializada</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label
+                            class="block text-sm font-medium text-slate-700 font-bold">Mensaje
+                            (Opcional)</label>
+                        <textarea name="message" rows="2"
+                            class="w-full mt-1 p-3 bg-slate-100 border-transparent rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-200 flex items-center justify-center gap-2">
+                        <i data-lucide="send" class="w-5 h-5"></i> Enviar y
+                        Agendar
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Galería de Armazones Actualizada con Efectos -->
+        <section class="py-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="mb-12 text-center">
+                    <h2 class="text-3xl font-bold text-slate-900">Modelos de
+                        Temporada</h2>
+                    <p class="text-slate-500 mt-2">Nuestra selección exclusiva
+                        para este mes</p>
+                    <div class="h-1 w-20 bg-blue-500 mx-auto mt-4"></div>
+                </div>
+
+                <!-- Grid de 5 imágenes con efectos hover -->
+                <div
+                    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+                    <!-- Modelo 1 -->
+                    <div
+                        class="group relative bg-white p-3 rounded-2xl shadow-sm overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="overflow-hidden rounded-xl">
+                            <img
+                                src="lente1.jpg"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110"
+                                alt="Armazón Cristal">
+                        </div>
+                        <p
+                            class="mt-3 text-center text-sm font-bold text-slate-700">Clear
+                            Minimal</p>
+                    </div>
+
+                    <!-- Modelo 2 -->
+                    <div
+                        class="group relative bg-white p-3 rounded-2xl shadow-sm overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="overflow-hidden rounded-xl">
+                            <img
+                                src="lente2.jpg"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110"
+                                alt="Lentes de Sol Moda">
+                        </div>
+                        <p
+                            class="mt-3 text-center text-sm font-bold text-slate-700">Urban
+                            Style</p>
+                    </div>
+
+                    <!-- Modelo 3 -->
+                    <div
+                        class="group relative bg-white p-3 rounded-2xl shadow-sm overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="overflow-hidden rounded-xl">
+                            <img
+                                src="lente3.jpg"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110"
+                                alt="Armazón Carey">
+                        </div>
+                        <p
+                            class="mt-3 text-center text-sm font-bold text-slate-700">Vintage
+                            Tortoise</p>
+                    </div>
+
+                    <!-- Modelo 4 -->
+                    <div
+                        class="group relative bg-white p-3 rounded-2xl shadow-sm overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="overflow-hidden rounded-xl">
+                            <img
+                                src="lente1.jpg"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110"
+                                alt="Armazón Metálico">
+                        </div>
+                        <p
+                            class="mt-3 text-center text-sm font-bold text-slate-700">Metal
+                            Rose</p>
+                    </div>
+
+                    <!-- Modelo 5 -->
+                    <div
+                        class="group relative bg-white p-3 rounded-2xl shadow-sm overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="overflow-hidden rounded-xl">
+                            <img
+                                src="lente2.jpg"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110"
+                                alt="Armazón Negro Clásico">
+                        </div>
+                        <p
+                            class="mt-3 text-center text-sm font-bold text-slate-700">Classic
+                            Black</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <div class="mb-6">
+                    <h4 class="text-white font-bold text-lg">OptoClinic</h4>
+                    <p class="text-sm mt-2">Cuidando tu visión con ética y
+                        profesionalismo.</p>
+                    <p class="text-sm mt-2">Esta landing page es una
+                        demostración de plantilla, para clientes de
+                        optometria,</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-xs mb-8">
+                    <a href="#aviso" onclick="toggleLegal()"
+                        class="hover:text-blue-400 transition">Aviso de
+                        Privacidad</a>
+                    <a href="#" class="hover:text-blue-400 transition">Términos
+                        y Condiciones</a>
+                    <span>&copy; 2026 Todos los derechos reservados.</span>
+                </div>
+
+                <div id="legalSection"
+                    class="hidden text-[10px] text-left max-w-2xl mx-auto bg-slate-800/50 p-6 rounded-lg leading-relaxed">
+                    <p class="mb-2 uppercase font-bold text-slate-300">Aviso de
+                        Privacidad Integral</p>
+                    <p>
+                        De conformidad con la Ley Federal de Protección de Datos
+                        Personales en Posesión de los Particulares,
+                        <strong>[NOMBRE DEL OPTOMETRISTA O CLÍNICA]</strong>,
+                        con domicilio en <strong>[DIRECCIÓN FÍSICA]</strong>,
+                        es responsable de recabar sus datos personales, del uso
+                        que se le dé a los mismos y de su protección.
+                    </p>
+                    <p class="mt-2">
+                        Su información personal será utilizada para proveer los
+                        servicios de salud visual que ha solicitado,
+                        informarle sobre cambios en los mismos, gestionar sus
+                        citas y, en su caso, para fines mercadotécnicos
+                        relacionados con promociones de armazones y lentes.
+                    </p>
+                    <p class="mt-2">
+                        Usted tiene derecho a acceder, rectificar y cancelar sus
+                        datos personales, así como de oponerse al
+                        tratamiento de los mismos (Derechos ARCO) enviando un
+                        correo a: <strong>[CORREO ELECTRÓNICO]</strong>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+    // Función para mostrar/ocultar el aviso legal
+    function toggleLegal() {
+        const legal = document.getElementById('legalSection');
+        legal.classList.toggle('hidden');
+    }
+</script>
+        <script>
+        // Inicializar Iconos
+        lucide.createIcons();
+
+        // Función Modal
+        function toggleModal() {
+            const modal = document.getElementById('contactModal');
+            modal.classList.toggle('hidden');
+        }
+    </script>
+    </body>
+</html>
